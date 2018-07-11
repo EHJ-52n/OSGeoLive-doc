@@ -2,7 +2,7 @@
 :Author: Simon Jirka (s.jirka@52north.org)
 :Author: Ann Hitchcock (a.hitchcock@52north.org)
 :Reviewer:
-:Version: osgeo-live11.0
+:Version: osgeo-live12.0
 :License: Creative Commons Attribution-ShareAlike 3.0 Unported  (CC BY-SA 3.0)
 
 .. image:: /images/project_logos/logo_52North_160.png
@@ -58,7 +58,7 @@ Getting Started
    **Fig. 2**: 52°North SOS client - test client with GetCapabilities request.
 
 4. To get the available observation data within the time
-   interval from 2017-02-28T23:45:00.000+00:00 to 2017-03-01T23:45:00.000+00:00
+   interval from 2018-07-02T23:45:00.000+00:00 to 2018-07-04T23:45:00.000+00:00
    for each time series, insert the following request after selecting service
    "SOS" --> version "2.0.0" --> binding "SOAP" --> operation "GetObservation"
    in the `test
@@ -84,8 +84,8 @@ Getting Started
                   <fes:During>
                       <fes:ValueReference>phenomenonTime</fes:ValueReference>
                       <gml:TimePeriod gml:id="tp_1">
-                          <gml:beginPosition>2017-02-28T23:45:00.000+00:00</gml:beginPosition>
-                          <gml:endPosition>2017-03-01T23:45:00.000+00:00</gml:endPosition>
+                        <gml:beginPosition>2018-07-02T23:45:00.000+00:00</gml:beginPosition>
+                        <gml:endPosition>2018-07-04T23:45:00.000+00:00</gml:endPosition>
                       </gml:TimePeriod>
                   </fes:During>
               </sos:temporalFilter>
@@ -127,59 +127,64 @@ Things to Try
 .. code-block:: js
 
     [
-        {
-            id: "services",
-            label: "Service Provider",
-            description: "A service provider offers timeseries data."
-        },
-        {
-            id: "stations",
-            label: "Station",
-            description: "A station is the place where measurement takes place."
-        },
-        {
-            id: "timeseries",
-            label: "Timeseries",
-            description: "Represents a sequence of data values measured over time."
-        },
-        {
-            id: "categories",
-            label: "Category",
-            description: "A category group available timeseries."
-        },
-        {
-            id: "offerings",
-            label: "Offering",
-            description: "An organizing unit to filter resources."
-        },
-        {
-            id: "features",
-            label: "Feature",
-            description: "An organizing unit to filter resources."
-        },
-        {
-            id: "procedures",
-            label: "Procedure",
-            description: "An organizing unit to filter resources."
-        },
-        {
-            id: "phenomena",
-            label: "Phenomenon",
-            description: "An organizing unit to filter resources."
-        },
-        {
-            id: "platforms",
-            label: "Platforms",
-            description: "A sensor platform where observations are made."
-        },
-        {
-            id: "geometries",
-            label: "Geometries",
-            description: "A geometry where observations are made or that was observed."
-        }
+      {
+        "id": "services",
+        "label": "Service Provider",
+        "description": "A service provider offers timeseries data."
+      },
+      {
+        "id": "stations",
+        "label": "Station",
+        "description": "A station is the place where measurement takes place."
+      },
+      {
+        "id": "timeseries",
+        "label": "Timeseries",
+        "description": "Represents a sequence of data values measured over time."
+      },
+      {
+        "id": "categories",
+        "label": "Category",
+        "description": "A category groups available timeseries."
+      },
+      {
+        "id": "offerings",
+        "label": "Offering",
+        "description": "An organizing unit to filter resources."
+      },
+      {
+        "id": "features",
+        "label": "Feature",
+        "description": "An organizing unit to filter resources."
+      },
+      {
+        "id": "procedures",
+        "label": "Procedure",
+        "description": "An organizing unit to filter resources."
+      },
+      {
+        "id": "phenomena",
+        "label": "Phenomenon",
+        "description": "An organizing unit to filter resources."
+      },
+      {
+        "id": "platforms",
+        "label": "Platforms",
+        "description": "A sensor platform where observations are made."
+      },
+      {
+        "id": "datasets",
+        "label": "Datasets",
+        "description": "Represents a sequence of data values observed over time."
+      },
+      {
+         "id": "geometries",
+        "label": "Geometries",
+        "description": "A geometry where observations are made or that was observed."
+      }
     ]
 
-**Listing 2:** Output of REST API endpoint.
+**Listing 2:** Output of SensorWeb REST API endpoint.
 
 
 What Next?
@@ -189,12 +194,11 @@ To learn more about the 52°North SOS and/or the 52°North Sensor Web Community,
 potential starting points are:
 
 * 52°North :doc:`SOS overview <../overview/52nSOS_overview>`,
-* 52°North Sensor Web mailing list: swe@52north.org,
-* 52°North `Sensor Web community forum <http://sensorweb.forum.52north.org/>`_,
-* 52°North `SOS Client <http://sensorweb.demo.52north.org/SOSclient/>`_,
-* 52°North `SOS Web site <http://52north.org/communities/sensorweb/sos/>`_, or
-* The website of the `52°North Sensor Web Community
-  <http://52north.org/communities/sensorweb/>`_.
+* 52°North Sensor Web mailing list: sensorweb@52north.org,
+* 52°North `Sensor Web community  <https://52north.org/research/research-labs/sensor-web/>`_,
+* 52°North `SOS Client <http://sensorweb.demo.52north.org/SOSclient/>`_ or
+* 52°North `SOS Web site <https://52north.org/sos/>`_.
+
 
 The development of this version of the 52°North SOS was supported by different
 projects, organizations, and persons. More details can be found in the

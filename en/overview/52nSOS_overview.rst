@@ -4,7 +4,7 @@
 :Author: Simon Jirka (s.jirka@52north.org)
 :Author: Ann Hitchcock (a.hitchcock@52north.org)
 :Reviewer:
-:Version: osgeo-live11.0
+:Version: osgeo-live12.0
 :License: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
 
 .. image:: /images/project_logos/logo_52North_160.png
@@ -116,7 +116,7 @@ Applicable Standards
 Details
 --------------------------------------------------------------------------------
 
-**Website:** http://52north.org/sos
+**Website:** https://52north.org/sos
 
 **Licence:** GNU General Public License (GPL) version 2
 
@@ -130,11 +130,11 @@ Details
 
 **API:** Java, HTTP + JSON/XML/SOAP/KVP
 
-**Commercial Support:** http://52north.org/
+**Commercial Support:** https://52north.org/services/
 
-**Community Support:** http://sensorweb.forum.52north.org/
+**Community Support:** https://list.52north.org/mailman/listinfo/sensorweb
 
-**Community Website:** http://52north.org/communities/sensorweb/
+**Community Website:** https://52north.org/research/research-labs/sensor-web/
 
 **Other 52°North projects on OSGeoLive:** :doc:`WPS <./52nWPS_overview>`
 
